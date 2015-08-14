@@ -50,7 +50,7 @@ L.Google = L.Class.extend({
 
 		//20px instead of 1em to avoid a slight overlap with google's attribution
 		map._controlCorners.bottomright.style.marginBottom = '20px';
-
+		L.polyline([[0, 0], ]).addTo(this._map);
 		this._reset();
 		this._update();
 	},
